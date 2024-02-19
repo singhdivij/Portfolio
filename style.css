@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #080808; */
+    background: linear-gradient(to right, #222325, #000000);
+    background-clip: text;
+    color: #fff;
+}
+
+/* ------header section------ */
+#header{
+    /* width: 100%; */
+    /* background-size: 500px; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(images/bg-refined.PNG);
+    background-size: 35% auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.container{
+    padding: 5px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#headerText{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+#headerText h1{
+    font-size: 65px;
+    margin-top: 10px;
+}
+
+#headerText h1 span{
+    color: orangered;
+}
+
+/* ------about section------ */
+#about{
+    height: auto;
+    color: #ababab;
+    padding: 80px, 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.col1{
+    flex-basis: 35%;
+}
+
+.col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col2{
+    flex-basis: 60%;
+}
+
+.about-section{
+    font-size: 16px;
+    padding-top: 3%;
+    color: #cccccc;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    color: #fff;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: orangered;
+    bottom: -8px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-content ul li{
+    list-style: none;
+    padding-top: 14px;
+    color: #cccccc;
+}
+
+.tab-content ul li span{
+    color: orangered;
+    font-size: 16px;
+}
+
+#experience span{
+    font-size: 30px;
+    color: orange;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
+}
+
+#services{
+    padding: 30px 0;
+    color: #ababab;
+}
+
+#services h1{
+    color: white;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    width: 100%;
+    background: #262626;
+    color: #fff;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.icon-gap{
+    margin: 0 20px;
+}
+
+.services-list div p{
+    font-size: 16px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background-color: rgb(255, 34, 0);
+    transform: translateY(-10px);
+}
+
+#portfolio{
+    padding: 30px 0;
+    height: 100vh; /*Remove it once you add more than 3 or 4 items in the grid, otherwise it will cause overlapping issues.*/
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    /* border-radius: 15px; */
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    border-radius: 15px;
+}
+
+.work h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work i{
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 50%;
+    background: #fff;
+    color: #ff0051d0;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff0051d0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.work a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+#contact{
+    padding: 30px 0;
+}
+
+.left-col{
+    flex-basis: 35%;
+}
+
+.right-col{
+    flex-basis: 55%;
+}
+
+.left-col p{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.left-col p i{
+    margin-right: 10px;
+    color:  #ff004f;
+    font-size: 25px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #ababab;
+    margin-right:20px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a i{
+    font-size: 30px;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.download-btn{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #ff004f;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    transition: background 0.5s;
+}
+
+.download-btn:hover{
+    background: #ff004f;
+}
+
+.right-col form button{
+    background: #262626;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.right-col form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    background: #262626;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+#submit-msg{
+    color: #61b752;
+    display: block;
+    margin: -25px;
+    margin-left: 125px;
+}
+
+#copyright{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-weight: 200;
+}
+
+#copyright span{
+    padding: 5px 15px;
+}
+
+/* -----------CSS for phone screen------------- */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background: #080808;
+        color: #fff;
+    }
+    
+    #header{
+        background-image: url(images/mobile-bg.png);
+        background-size: contain;
+    }
+
+    #headerText{
+        margin-top: 35%;
+        font-size: 20px;
+    }
+
+    #headerText h1{
+        font-size: 35px;
+    }
+
+    nav .fa-solid{
+        position: absolute;
+        display: block;
+        top: 30px;
+        right: 30px;
+        font-size: 30px;
+    }
+
+    nav ul{
+        background: orangered;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        display: block;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .col1, .col2{
+        flex-basis: 100%;
+    }
+
+    .sub-title{
+        margin: 10px 0;
+        font-weight: 400;
+        font-size: 50px;
+    }
+
+    .tab-links{
+        margin-right: 30px;
+    }
+
+    .left-col, .right-col{
+        flex-basis: 100%;
+    }
+
+    .social-icons a{
+        margin-bottom: 15px;
+    }
+
+    .left-col p{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .download-btn{
+        margin-bottom: 15px;
+    }
+
+    #contact h1{
+        font-size: 40px;
+    }
+
+    #submit-msg{
+        margin: -10px;
+        margin-left: 5px;
+    }
+}

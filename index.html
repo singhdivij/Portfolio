@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00639dc40a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ......HEADER...... -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-dDivij.png" class="logo">
+                <ul id="menulist">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="headerText">
+                <p>Front End Web Developer.</p>
+                <h1> Hello, I'm <span>Divij</span> Singh.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ......ABOUT...... -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/bg-about-gray.png">
+                </div>
+
+                <div class="col2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="about-section"> I'm a 23 years old computer geek seeking work in the field of IT, relevant
+                        to my skills and educational background. Keenly interested in the field of Cloud Computing.
+                        Self-taught in C#, NodeJs,
+                        and cloud fundamentals. Currently learning more about MS-Azure and Dynamics 365.
+                        I am also experienced in Information and System Security as part of an Ethical Hacking
+                        certification course conducted by IIT-Kanpur, in which I learnt and implemented concepts of
+                        cybersecurity. I also gained hands-on experience in tools such as Nmap, Nessus, Owasp,
+                        Burpsuite, metasploit, Wireshark and many more.<br>To know someone better, you should know about
+                        their hobbies. Well my hobbies are - watching animes, staying fit, gaming and reading. Do take
+                        your time to check out some of my work (projects for self) below. You read so far,
+                        it seems like I intrigued you. Well then, if you are a potential recruiter, contact me for any
+                        suitable full-time work. And if you are not a recruiter then any connections or referrals will
+                        be much appreciated. Ari-gatou Gosaimasu! </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML | CSS | Javascript | Node | React</li>
+                            <li><span>Programming</span><br>C# | Python</li>
+                            <li><span>Cybersecurity</span><br>Penetration Testing | Vulnerability Assessment</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Graduation</span><br>Durg University<br><i>B.Sc. in Computer Science</i> </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <span>Need a job for that🫠!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ......SERVICES...... -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Here's what I can do</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-brands fa-js icon-gap"></i>
+                    <h2>Javascript, C#</h2>
+                    <p>
+                        Interactive 2-D gaming applications using C#. Back-end scripting using javascript.
+                    </p>
+                    <a href="https://github.com/singhdivij" target="_blank">See on GitHub.</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt icon-gap"></i>
+                    <h2>Web Designing</h2>
+                    <p>
+                        Responsive web page designing using HTML, CSS, JS, Node, React.
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cybersecurity</h2>
+                    <p>
+                        VAPT using different tools such as Burpsuite, Nmap... with understanding of concepts
+                        such as encryption, hashing, Subnets, Routing protocols and so on.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ...... PORTFOLIO ...... -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/xtasks.webp" alt="x-clone">
+                    <a href="https://xtasks.netlify.app" target="_blank">
+                        <div class="layer">
+                            <h3>To-Do List by Divij</h3>
+                            <p>Note down your important tasks for the day in this to-do list app.<br><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work">
+                    <img src="images/twitter-grid.webp" alt="x-clone">
+                    <a href="https://xmain.netlify.app" target="_blank">
+                        <div class="layer">
+                            <h3>X Homepage clone</h3>
+                            <p>Clone of Twitter's homepage.<br><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work">
+                    <img src="images/dmrkt-overview.webp">
+                    <a href="https://digimrktn.netlify.app" target="_blank">
+                        <div class="layer">
+                            <h3>Digital Marketing</h3>
+                            <p>Homepage design for a Digital Marketing site.<br><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ....... CONTACT ...... -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Connect with me</h1>
+            <div class="row">
+                <div class="left-col">
+                    <p><i class="fa-solid fa-paper-plane"></i> divijsingh@outlook.in</p>
+                    <div class="social-icons">
+                        <a href="https://in.linkedin.com/in/divijsingh1" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/divijxingh" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/singhdivij" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Divij Singh.pdf" download class="download-btn" target="_blank">Download CV</a>
+                </div>
+
+                <div class="right-col">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Write a message"></textarea>
+                        <button type="submit" class="download-btn">Submit</button>
+                    </form>
+                    <span id="submit-msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <span>Copyright ©️ Divij Singh | 2024</span>
+    </div>
+
+    <!-- ...... SCRIPT ...... -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
