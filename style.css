@@ -239,13 +239,13 @@ nav ul li a:hover::after{
 
 #portfolio{
     padding: 30px 0;
-    height: 100vh; /*Remove it once you add more than 3 or 4 items in the grid, otherwise it will cause overlapping issues.*/
+    height: auto;
 }
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 30px;
     margin-top: 50px;
 }
 
